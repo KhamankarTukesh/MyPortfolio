@@ -16,7 +16,7 @@ function About() {
                 <div className="flex flex-col lg:flex-row gap-16 items-start mb-32">
                     {/* Left: Journey Text */}
                     <div className="flex-1">
-                        <h1 className="text-5xl font-black mb-10 tracking-tight">My Journey</h1>
+                        <h1 className="text-5xl font-black mb-10 tracking-tight mt-14">My <span className='inline-block drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]  animate-pulse scale-100 hover:scale-110 transition-transform duration-700 text-primary'>Journey</span></h1>
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed max-w-2xl">
                             <p>I started my journey by exploring the fundamentals of web development, driven by a curiosity about how things work. What began as simple HTML experiments gradually evolved into a deep passion for building scalable applications and solving complex architectural challenges.</p>
                             <p>Over the years, I have refined my skills within the React ecosystem and modern backend technologies. I focus on delivering seamless user experiences supported by robust, secure, and maintainable architectures.</p>
@@ -43,7 +43,7 @@ function About() {
 
                         {/* 1. The "Home Page" Neon Orb - Background Glow */}
                         {/* Ye div card ke bilkul piche glow karega, jaisa home page image mein hai */}
-                        <div className="absolute -inset-10 bg-primary/20 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
+                        <div className="absolute -inset-10 bg-primary/20 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 animate-glow pointer-events-none"></div>
 
                         <div className="relative bg-[#0d0d0d] border border-white/5 p-12 rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-primary/20">
 

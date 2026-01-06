@@ -32,7 +32,7 @@ function Projects() {
       <div className="max-w-6xl mx-auto"> {/* Container width reduced */}
         
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 mt-16">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
             Featured <span className="text-primary">Projects</span>
           </h1>
