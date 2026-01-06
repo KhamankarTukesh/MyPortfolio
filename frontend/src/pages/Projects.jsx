@@ -34,7 +34,7 @@ function Projects() {
         {/* Header Section */}
         <div className="text-center mb-16 mt-16">
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
-            Featured <span className="text-primary">Projects</span>
+            Featured <span className="inline-block drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]  animate-pulse scale-100 hover:scale-110 transition-transform duration-700 text-primary">Projects</span>
           </h1>
           <p className="text-gray-400 text-md max-w-2xl mx-auto">
             A curated collection demonstrating technical proficiency and architectural thinking.
@@ -42,9 +42,9 @@ function Projects() {
         </div>
 
         {/* Compact Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24 ">
           {projectList.map((project, index) => (
-            <div key={index} className="bg-[#0d0d0d] border border-white/5 rounded-[1.5rem] overflow-hidden group hover:border-primary/20 transition-all duration-500 flex flex-col">
+            <div key={index} className="bg-[#0d0d0d] border border-white/5 hover:shadow-[0_0_30px_rgba(57,255,20,0.6)] transition-all duration-300  rounded-[1.5rem] overflow-hidden group hover:border-primary/20 transition-all duration-500 flex flex-col">
               
               {/* Reduced Image Height */}
               <div className="h-44 overflow-hidden relative">
@@ -83,10 +83,10 @@ function Projects() {
 
                 {/* Compact Buttons */}
                 <div className="flex gap-3 pt-4 border-t border-white/5">
-                  <button className="flex-1 bg-primary text-black font-black py-2.5 rounded-lg flex items-center justify-center gap-2 hover:bg-[#2edb12] transition-all text-[11px] uppercase tracking-tighter">
+                  <button className="flex-1 bg-primary text-black font-black py-2.5 rounded-lg flex items-center justify-center hover:shadow-[0_0_50px_rgba(57,255,20,0.5)] transition-all hover:scale-105 gap-2 hover:bg-[#2edb12] transition-all text-[11px] uppercase tracking-tighter">
                     <FaEye size={14} /> Live Demo
                   </button>
-                  <button className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2.5 rounded-lg flex items-center justify-center gap-2 hover:bg-white/10 transition-all text-[11px] uppercase tracking-tighter">
+                  <button className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2.5 rounded-lg flex hover:scale-105 items-center justify-center gap-2 hover:bg-white/10 transition-all text-[11px] uppercase tracking-tight">
                     <GoCode size={14} /> GitHub
                   </button>
                 </div>

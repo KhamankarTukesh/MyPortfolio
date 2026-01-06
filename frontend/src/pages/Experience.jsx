@@ -39,25 +39,25 @@ const ExperiencePage = () => {
 
           <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-[#38ff14]/40 before:via-white/5 before:to-transparent">
             <ExperienceCard 
-              role="Senior Full Stack Engineer"
+              role="Full Stack Engineer"
               company="TechSolutions Inc."
-              date="Jan 2024 - Present"
+              date="Jan 2026 - Present"
               desc={[
                 "Architected scalable microservices reducing system latency by 40%.",
                 "Led a team of 4 juniors in migrating legacy frontend to Next.js.",
                 "Optimized cloud infrastructure on AWS for high availability."
               ]}
-              tech={['React', 'Spring Boot', 'AWS', 'PostgreSQL']}
+              tech={['Express', 'Node.js', 'SQL', 'MongoDB']}
             />
             <ExperienceCard 
               role="Frontend Developer"
               company="CreativeWeb Agency"
-              date="Jun 2022 - Dec 2023"
+              date="July 2024 - Aug 2025"
               desc={[
                 "Developed pixel-perfect UIs for over 15 client projects.",
                 "Improved Lighthouse performance scores from 60 to 98."
               ]}
-              tech={['JavaScript', 'Tailwind CSS', 'Figma', 'React']}
+              tech={['JavaScript', 'Tailwind CSS', 'React']}
             />
           </div>
         </section>

@@ -1,11 +1,8 @@
 import React from 'react'
 import { PiBagSimpleFill } from "react-icons/pi";
-import { FaCloud, FaGraduationCap } from "react-icons/fa";
-import { AiFillSafetyCertificate } from "react-icons/ai";
-import { CiServer } from "react-icons/ci";
-import { GoChevronRight, GoChevronLeft, GoDotFill } from "react-icons/go";
+import {  GoDotFill } from "react-icons/go";
 import { MdLightbulbCircle } from "react-icons/md";
-import { LiaCertificateSolid } from "react-icons/lia"; // Make sure to install react-icons/lia
+
 
 function About() {
     return (
