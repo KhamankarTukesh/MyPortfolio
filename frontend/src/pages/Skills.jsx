@@ -92,7 +92,7 @@ function Skills() {
         {/* --- 2. Education & Credentials Section --- */}
         <div className="relative">
           <div className="flex items-center gap-6 mb-12">
-            <h2 className="text-4xl font-black tracking-tight">Certifications & Education</h2>
+            <h2 className="text-4xl font-black tracking-tight">Certifications & University</h2>
             <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent"></div>
           </div>
 
