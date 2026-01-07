@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const ExperiencePage = () => {
   return (
     <div className="bg-[#0b160a] font-['Inter'] text-slate-300 antialiased min-h-screen overflow-x-hidden selection:bg-[#38ff14] selection:text-black">
@@ -43,21 +44,22 @@ const ExperiencePage = () => {
               company="TechSolutions Inc."
               date="Jan 2026 - Present"
               desc={[
-                "Architected scalable microservices reducing system latency by 40%.",
-                "Led a team of 4 juniors in migrating legacy frontend to Next.js.",
-                "Optimized cloud infrastructure on AWS for high availability."
+                "Worked on building and improving microservices-based backend systems, helping reduce API response time and overall latency.",
+                "Assisted in migrating an existing frontend to React.js, collaborating with team members and following best practices.",
+                "Optimized cloud infrastructure."
               ]}
-              tech={['Express', 'Node.js', 'SQL', 'MongoDB']}
+              tech={['Express', 'Node.js', 'MongoDB','React.js']}
             />
             <ExperienceCard 
               role="Frontend Developer"
-              company="CreativeWeb Agency"
+              company="DelXN Technology Pvt. Ltd."
               date="July 2024 - Aug 2025"
               desc={[
-                "Developed pixel-perfect UIs for over 15 client projects.",
-                "Improved Lighthouse performance scores from 60 to 98."
+                "Developed Product Details Page in React.js for an e-commerce platform, enhancing user experience and increasing conversion rates. ",
+                "Improved Styling and Responsiveness of Web Applications using CSS3.",
+                "Collaborated with cross-functional teams to implement new features and optimize existing ones, leading to a 15% boost in overall application performance."
               ]}
-              tech={['JavaScript', 'Tailwind CSS', 'React']}
+              tech={['JavaScript', 'CSS3', 'HTML5']}
             />
           </div>
         </section>
@@ -71,32 +73,63 @@ const ExperiencePage = () => {
               <div className="w-14 h-14 bg-[#0b160a] border border-[#38ff14]/20 rounded-2xl flex items-center justify-center text-[#38ff14] mb-8 shadow-[inset_0_0_15px_rgba(56,255,20,0.1)] group-hover:shadow-[0_0_20px_rgba(56,255,20,0.3)] transition-all">
                 <span className="material-symbols-outlined text-3xl">school</span>
               </div>
-              <p className="text-[#38ff14] text-[10px] font-black tracking-[0.3em] uppercase mb-2">2017 — 2021</p>
+              <p className="text-[#38ff14] text-[10px] font-black tracking-[0.3em] uppercase mb-2">2024 — 2028</p>
               <h3 className="text-2xl font-bold text-white mb-2">B.Tech in Computer Science</h3>
-              <p className="text-gray-500 font-medium mb-8 text-lg">State University of Technology</p>
+              <p className="text-gray-500 font-medium mb-8 text-lg">Savitribai phule University(SPPU), Pune</p>
               
               <div className="pt-6 border-t border-white/5 space-y-4">
                 <p className="text-[10px] font-black tracking-widest text-white/40 uppercase">Notable Achievements</p>
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#38ff14] text-sm">verified</span>
-                  <p className="text-sm text-gray-400 font-bold">First Class Honors (3.8 GPA)</p>
+                  <p className="text-sm text-gray-400 font-bold">First Years Honors (9.8 CGPA)</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Certifications Card (Vertical List) */}
-          <div className="group bg-[#132311]/40 border border-[#38ff14]/10 p-8 rounded-[2.5rem] hover:border-[#38ff14]/50 hover:shadow-[0_0_30px_rgba(56,255,20,0.15)] transition-all duration-500">
-            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="material-symbols-outlined text-[#38ff14]">workspace_premium</span>
-              Certifications
-            </h3>
-            <div className="space-y-4">
-              <CertItem icon="cloud" color="text-yellow-500" name="AWS Solutions Architect" org="Amazon" />
-              <CertItem icon="code" color="text-blue-500" name="Meta Front-End Developer" org="Meta" />
-              <CertItem icon="security" color="text-[#38ff14]" name="Cybersecurity Specialist" org="IBM" />
-            </div>
-          </div>
+<div className="group bg-[#132311]/40 border border-[#38ff14]/10 p-6 md:p-8 rounded-[2.5rem] hover:border-[#38ff14]/50 hover:shadow-[0_0_30px_rgba(56,255,20,0.15)] transition-all duration-500 relative overflow-hidden">
+  {/* Background Decoration Glow */}
+  <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#38ff14]/5 rounded-full blur-[80px] group-hover:bg-[#38ff14]/10 transition-all duration-700"></div>
+
+  <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3 relative z-10">
+    <span className="material-symbols-outlined text-[#38ff14] text-3xl">workspace_premium</span>
+    Certifications
+  </h3>
+
+  <div className="space-y-4 relative z-10">
+    {/* Full Stack Certificate Item */}
+    <div className="flex items-center justify-between p-4 bg-[#0b160a]/50 border border-white/5 rounded-2xl hover:border-[#38ff14]/30 transition-all group/item">
+      <div className="flex items-center gap-4">
+        <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-purple-500 group-hover/item:shadow-[0_0_15px_rgba(56,255,20,0.2)] transition-all">
+          <span className="material-symbols-outlined text-2xl">layers</span>
+        </div>
+        <div>
+          <p className="text-white font-bold text-sm leading-tight">Full Stack Web Development</p>
+          <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">MERN Stack (Currently Working)</p>
+        </div>
+      </div>
+      <a href="/certs/fullstack.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
+        <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+      </a>
+    </div>
+
+    {/* Front-End Certificate Item */}
+    <div className="flex items-center justify-between p-4 bg-[#0b160a]/50 border border-white/5 rounded-2xl hover:border-[#38ff14]/30 transition-all group/item">
+      <div className="flex items-center gap-4">
+        <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-cyan-500 group-hover/item:shadow-[0_0_30px_rgba(56,255,20,0.2)] transition-all">
+          <span className="material-symbols-outlined text-2xl">terminal</span>
+        </div>
+        <div>
+          <p className="text-white font-bold text-sm leading-tight">Front-End Development</p>
+          <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">HTML5 , CSS3, JavaScript</p>
+        </div>
+      </div>
+      <a href="/certs/frontend.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
+        <span className="material-symbols-outlined text-[20px]">open_in_new</span>
+      </a>
+    </div>
+  </div>
+</div>
         </section>
 
         {/* 3. Achievements (Horizontal Scroll - Hidden Scrollbar) */}
@@ -107,10 +140,8 @@ const ExperiencePage = () => {
           </div>
           
           <div className="flex gap-6 overflow-x-auto pb-4 hide-scrollbar snap-x">
-            <AchievementCard title="Global AI Hackathon 2023" role="Winner (1st Place)" icon="trophy" color="text-yellow-500" />
-            <AchievementCard title="LeetCode Annual Contest" role="Top 10%" icon="code_blocks" color="text-[#38ff14]" />
-            <AchievementCard title="Google Summer of Code" role="Mentor" icon="groups" color="text-blue-400" />
-            <AchievementCard title="Smart India Hackathon" role="Finalist" icon="lightbulb" color="text-purple-400" />
+            <AchievementCard title="Smart India Hackathon - 2025" role="College Level" icon="trophy" color="text-yellow-500" />
+            <AchievementCard title="LeetCode Annual Contest" role="IN Progress" icon="code_blocks" color="text-[#38ff14]" />
           </div>
         </section>
 

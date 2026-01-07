@@ -10,8 +10,10 @@ import { LuClock5 } from "react-icons/lu";
 import { MdElectricBolt } from "react-icons/md";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <main className="bg-background-dark min-h-screen text-white pt-24 md:pt-32 pb-20 overflow-hidden relative">
 
@@ -73,10 +75,10 @@ function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
-              <button className="flex items-center justify-center gap-2 py-3.5 px-8 bg-primary text-black font-bold rounded-lg hover:shadow-[0_0_50px_rgba(57,255,20,0.5)] transition-all hover:scale-105">
+              <button onClick={() => navigate("/projects")} className="flex items-center justify-center gap-2 py-3.5 px-8 bg-primary text-black font-bold rounded-lg hover:shadow-[0_0_50px_rgba(57,255,20,0.5)] transition-all hover:scale-105">
                 View My Work <FaArrowRightLong />
               </button>
-              <button className="py-3.5 px-8 hover:scale-105 bg-white/5 border border-white/10 text-white font-bold rounded-lg hover:bg-white/10 transition-all">
+              <button onClick={() => navigate("/contact")} className="py-3.5 px-8 hover:scale-105 bg-white/5 border border-white/10 text-white font-bold rounded-lg hover:bg-white/10 transition-all">
                 Contact Me
               </button>
             </div>
@@ -90,9 +92,9 @@ function Home() {
       <div className="max-w-7xl mx-auto px-6 lg:px-14 mt-20">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {[
-            { icon: <LuClock5 />, label: 'Experience', value: '5+', sub: 'Years' },
-            { icon: <BsFillRocketTakeoffFill />, label: 'Projects', value: '30+', sub: 'Completed' },
-            { icon: <FaRegSmile />, label: 'Happy Clients', value: '12+', sub: 'Global' },
+            { icon: <LuClock5 />, label: 'Experience', value: '1+', sub: 'Month' },
+            { icon: <BsFillRocketTakeoffFill />, label: 'Projects', value: '5+', sub: 'Completed' },
+            { icon: <FaRegSmile />, label: 'Happy Clients', value: '10+', sub: 'Global' },
             { icon: <MdElectricBolt />, label: 'Uptime', value: '99%', sub: 'Reliability' },
           ].map((stat, index) => (
             <div key={index} className="bg-white/5 border border-white/10 p-6 rounded-2xl hover:bg-white/10 transition-all group">

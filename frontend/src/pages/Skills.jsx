@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaCloud, FaGraduationCap, FaCode, FaServer, FaTerminal, FaRegCopyright } from "react-icons/fa"; // FaRegCopyright add kiya
+import { FaCloud, FaGraduationCap } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { CiServer } from "react-icons/ci";
-import { GoChevronRight, GoChevronLeft, GoDotFill ,GoCode} from "react-icons/go";
-import { LiaCertificateSolid } from "react-icons/lia";
+import {  GoDotFill ,GoCode} from "react-icons/go";
 function Skills() {
   return (
     <section className="relative bg-background-dark text-white py-24 px-6 lg:px-14 min-h-screen overflow-hidden">
@@ -21,7 +20,7 @@ function Skills() {
             Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Toolkit</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
-            The technology stack and professional credentials I've mastered to build high-performance digital solutions.
+            A diverse set of skills and technologies that I have mastered to build efficient, scalable, and maintainable software solutions.  
           </p>
         </div>
 
@@ -39,7 +38,7 @@ function Skills() {
                 Frontend
               </div>
               <div className="flex flex-wrap gap-3">
-                {['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Redux'].map(skill => (
+                {['React', 'HTML5', 'CSS3', 'Tailwind CSS','JavaScript'].map(skill => (
                   <span key={skill} className="px-5 py-2.5 bg-white/5 border border-white/5 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-blue-500/10 hover:border-blue-500/40 transition-all cursor-default">
                     <GoDotFill className="text-blue-500 text-[10px]" /> {skill}
                   </span>
@@ -59,7 +58,7 @@ function Skills() {
                 Backend & DB
               </div>
               <div className="flex flex-wrap gap-3">
-                {['Node.js', 'Express.js', 'Java', 'Spring Boot', 'MongoDB', 'PostgreSQL'].map(skill => (
+                {['Node.js', 'Express.js',  'MongoDB', 'npm-packages'].map(skill => (
                   <span key={skill} className="px-5 py-2.5 bg-white/5 border border-white/5 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-primary/10 hover:border-primary/40 transition-all cursor-default">
                     <GoDotFill className="text-primary text-[10px]" /> {skill}
                   </span>
@@ -79,7 +78,7 @@ function Skills() {
                 DevOps & Cloud
               </div>
               <div className="flex flex-wrap gap-3">
-                {['Docker', 'AWS', 'CI/CD', 'Git', 'Linux'].map(skill => (
+                {['Git', 'GitHub','Cloudinary'].map(skill => (
                   <span key={skill} className="px-5 py-2.5 bg-white/5 border border-white/5 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-orange-500/10 hover:border-orange-500/40 transition-all cursor-default">
                     <GoDotFill className="text-orange-500 text-[10px]" /> {skill}
                   </span>
@@ -100,7 +99,7 @@ function Skills() {
             {[
               { title: 'B.Tech Computer Science', org: 'ZCOER', date: '2024-2028', icon: <FaGraduationCap />, color: 'primary' },
               { title: 'Full Stack Development', org: 'Apna College', date: 'Issued 2025', icon: <AiFillSafetyCertificate />, color: 'primary' },
-              { title: 'Gen AI Professional', org: 'IIT Roorkee Program', date: 'In Progress', icon: <LiaCertificateSolid />, color: 'primary' }
+              
             ].map((edu, idx) => (
               <div key={idx} className="group relative">
                 <div className="relative bg-white/5 border border-white/10 p-8 rounded-3xl flex items-center gap-6 overflow-hidden transition-all duration-500 hover:bg-white/[0.08] hover:-translate-y-2">

@@ -15,9 +15,9 @@ function About() {
                     <div className="flex-1">
                         <h1 className="text-5xl font-black mb-10 tracking-tight mt-14">My <span className='inline-block drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]  animate-pulse scale-100 hover:scale-110 transition-transform duration-700 text-primary'>Journey</span></h1>
                         <div className="space-y-6 text-gray-400 text-lg leading-relaxed max-w-2xl">
-                            <p>I started my journey by exploring the fundamentals of web development, driven by a curiosity about how things work. What began as simple HTML experiments gradually evolved into a deep passion for building scalable applications and solving complex architectural challenges.</p>
-                            <p>Over the years, I have refined my skills within the React ecosystem and modern backend technologies. I focus on delivering seamless user experiences supported by robust, secure, and maintainable architectures.</p>
-                            <p>My work blends strong technical expertise with a user-centric mindset. Whether optimizing database queries or refining micro-interactions, I ensure every line of code contributes to a meaningful solution.</p>
+                            <p>I am a Computer Science Engineering student focused on building modern, scalable web applications with a strong emphasis on clean architecture and user experience. My journey started with web development, where I developed a solid foundation in HTML, CSS, JavaScript, and React, and learned how to design responsive and maintainable interfaces.</p>
+                            <p>Alongside web development, I am exploring AI-driven automation, experimenting with workflow tools like n8n to understand how intelligent systems can optimize processes. In parallel, I am actively improving my Data Structures and Algorithms in Java, focusing on writing efficient and well-structured code.</p>
+                            <p>I believe great software is built by combining strong fundamentals, continuous learning, and real-world problem solving, and I aim to grow as a software engineer in high-impact product teams.</p>
                         </div>
 
                         {/* Currently Working Badge */}

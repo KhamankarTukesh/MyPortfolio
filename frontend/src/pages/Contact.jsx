@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
@@ -9,7 +10,7 @@ const Contact = () => {
 
   const handleLinkedIn = () => window.open('https://linkedin.com/in/tukesh-khamankar-aa5894332', '_blank');
   const handleGitHub = () => window.open('https://github.com/khamankartukesh', '_blank');
-  const handleTwitter = () => window.open('https://twitter.com/tukeshkhamankar', '_blank');
+  const handleLeetcode = () => window.open('https://leetcode.com/u/CodeWithTukesh/', '_blank');
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -91,7 +92,7 @@ const Contact = () => {
           <div>
             <h2 className="text-xs font-bold text-white/50 uppercase tracking-[0.2em] mb-6">Connect With Me</h2>
             <div className="flex gap-4">
-              {[ {icon: <FaLinkedinIn />, fn: handleLinkedIn}, {icon: <FaGithub />, fn: handleGitHub}, {icon: <FaTwitter />, fn: handleTwitter} ].map((item, idx) => (
+              {[ {icon: <FaLinkedinIn />, fn: handleLinkedIn}, {icon: <FaGithub />, fn: handleGitHub}, {icon: <SiLeetcode />, fn: handleLeetcode} ].map((item, idx) => (
                 <button key={idx} onClick={item.fn} className="group relative w-12 h-12 flex items-center justify-center rounded-xl bg-[#132311] border border-white/5 text-gray-400 hover:text-[#38ff14] hover:border-[#38ff14]/50 hover:shadow-[0_0_20px_rgba(56,255,20,0.3)] hover:-translate-y-1 transition-all duration-300">
                   <div className="absolute inset-0 bg-[#38ff14]/10 rounded-xl blur-lg opacity-0 group-hover:opacity-100 animate-pulse pointer-events-none"></div>
                   <span className="relative z-10 text-xl">{item.icon}</span>
@@ -139,7 +140,7 @@ const Contact = () => {
 
             {/* Status Feedback */}
             {status === "success" && <p className="text-[#1fe00e] text-center text-xs font-bold animate-bounce mt-2">✅ Message sent successfully!</p>}
-            {status === "error" && <p className="text-red-500 text-center text-xs font-bold mt-2">❌ Failed! Check your internet or .env setup.</p>}
+            {status === "error" && <p className="text-red-500 text-center text-xs font-bold mt-2">❌ Failed! Check your internet or try later.</p>}
           </form>
         </div>
       </div>
