@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 

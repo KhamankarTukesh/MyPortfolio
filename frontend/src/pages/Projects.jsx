@@ -84,10 +84,10 @@ function Projects() {
                 {/* Compact Buttons */}
                 <div className="flex gap-3 pt-4 border-t border-white/5">
                   <button className="flex-1 bg-primary text-black font-black py-2.5 rounded-lg flex items-center justify-center hover:shadow-[0_0_50px_rgba(57,255,20,0.5)] transition-all hover:scale-105 gap-2 hover:bg-[#2edb12] transition-all text-[11px] uppercase tracking-tighter">
-                    <FaEye size={14} /> Live Demo
+                    <FaEye size={14} /> Live Demo<span className="material-symbols-outlined text-[20px]">open_in_new</span>
                   </button>
                   <button className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2.5 rounded-lg flex hover:scale-105 items-center justify-center gap-2 hover:bg-white/10 transition-all text-[11px] uppercase tracking-tight">
-                    <GoCode size={14} /> GitHub
+                    <GoCode size={14} /> GitHub<span className="material-symbols-outlined text-[20px]">open_in_new</span>
                   </button>
                 </div>
               </div>
