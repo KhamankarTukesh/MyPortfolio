@@ -103,27 +103,25 @@ function Skills() {
 
             <div className="absolute -inset-1 bg-[#38ff14]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
-            {/* 2. Main Content Div */}
             <div className="relative flex items-center justify-between p-4 bg-[#0b160a] border border-white/5 rounded-2xl group-hover:border-[#38ff14]/30 transition-all duration-500">
               <div className="flex items-center gap-4">
-                {/* Icon Circle with Glow */}
                 <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-[#38ff14] shadow-[0_0_15px_rgba(56,255,20,0.1)] group-hover:shadow-[0_0_30px_rgba(56,255,20,0.4)] transition-all duration-500">
                   <span className="material-symbols-outlined text-2xl">terminal</span>
                 </div>
 
                 <div>
                   <p className="text-white font-bold text-sm leading-tight group-hover:text-[#38ff14] transition-colors duration-500">
-                    Front-End Development
+                    Full stck Development
                   </p>
                   <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">
-                    HTML5, CSS3, JavaScript
+                    MongoDB, Express.js, React, Node.js 
                   </p>
                 </div>
               </div>
 
               {/* Redirect Button */}
               <a
-                href="/certs/frontend.pdf"
+                href="/certs/fullstack.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 hover:shadow-[0_0_15px_rgba(56,255,20,0.3)] transition-all z-10"
@@ -132,43 +130,6 @@ function Skills() {
               </a>
             </div>
           </div>
-
-          {/* --- Certificate Card 1 with Heavy Glow --- */}
-          <div className="group relative min-w-[320px] md:min-w-[380px] snap-start">
-
-            {/* 1. Heavy Glow Background (Ye layer piche glow degi) */}
-            <div className="absolute -inset-1 bg-[#38ff14]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-            {/* 2. Main Content Div */}
-            <div className="relative flex items-center justify-between p-4 bg-[#0b160a] border border-white/5 rounded-2xl group-hover:border-[#38ff14]/30 transition-all duration-500">
-              <div className="flex items-center gap-4">
-                {/* Icon Circle with Glow */}
-                <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-[#38ff14] shadow-[0_0_15px_rgba(56,255,20,0.1)] group-hover:shadow-[0_0_30px_rgba(56,255,20,0.4)] transition-all duration-500">
-                  <span className="material-symbols-outlined text-2xl">terminal</span>
-                </div>
-
-                <div>
-                  <p className="text-white font-bold text-sm leading-tight group-hover:text-[#38ff14] transition-colors duration-500">
-                    Front-End Development
-                  </p>
-                  <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">
-                    HTML5, CSS3, JavaScript
-                  </p>
-                </div>
-              </div>
-
-              {/* Redirect Button */}
-              <a
-                href="/certs/frontend.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 hover:shadow-[0_0_15px_rgba(56,255,20,0.3)] transition-all z-10"
-              >
-                <span className="material-symbols-outlined text-[20px]">open_in_new</span>
-              </a>
-            </div>
-          </div>
-
         </div>
 
       </div>
