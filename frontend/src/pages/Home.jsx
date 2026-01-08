@@ -11,6 +11,7 @@ import { MdElectricBolt } from "react-icons/md";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
+import myimage from '../assets/tukesh.png';
 
 function Home() {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent z-10 opacity-80"></div>
 
               <img
-                src="YOUR_IMAGE_URL"
+                src= {myimage}
                 alt="Tukesh"
                 className="w-full h-full object-cover object-top grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-110"
               />
@@ -50,7 +51,7 @@ function Home() {
                 </div>
                 <div className="whitespace-nowrap">
                   <p className="text-[10px] text-primary font-bold uppercase tracking-widest leading-none mb-1.5">Current Focus</p>
-                  <p className="text-sm font-black text-white leading-none">Full Stack Architecture</p>
+                  <p className="text-sm font-black text-white leading-none">DSA & Full Stack</p>
                 </div>
               </div>
             </div>
@@ -59,7 +60,7 @@ function Home() {
           {/* 2. Text Content: Mobile par ORDER-2 (Neeche dikhega) */}
           <div className="z-10 text-center lg:text-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-primary text-[10px] font-bold tracking-widest uppercase mb-6 animate-pulse">
-              <GoDotFill /> AVAILABLE FOR HIRE
+              <GoDotFill /> CU
             </div>
 
             <h1 className="text-4xl md:text-7xl font-black leading-[1.1] mb-6 tracking-tight">
