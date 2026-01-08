@@ -60,7 +60,7 @@ function Home() {
           {/* 2. Text Content: Mobile par ORDER-2 (Neeche dikhega) */}
           <div className="z-10 text-center lg:text-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-primary text-[10px] font-bold tracking-widest uppercase mb-6 animate-pulse">
-              <GoDotFill /> CU
+              <GoDotFill /> CURRENTLY WORKING
             </div>
 
             <h1 className="text-4xl md:text-7xl font-black leading-[1.1] mb-6 tracking-tight">
@@ -72,7 +72,7 @@ function Home() {
             </h1>
 
             <p className="text-gray-400 text-base md:text-lg mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Hi, I'm <span className="text-white font-bold">Tukesh Khamankar</span>. A Full Stack Developer specializing in React, Node.js, and Java. I craft high-performance web applications with a focus on user experience and clean code.
+              Hi, I'm <span className="text-white font-bold">Tukesh Khamankar</span>. A Full Stack Developer specializing in React, Node.js, and Java programming language. I craft high-performance web applications with a focus on user experience and clean code.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
