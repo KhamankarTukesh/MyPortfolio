@@ -1,29 +1,40 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { GoCheckCircleFill, GoCode, GoArrowRight } from "react-icons/go";
 import { FaEye, FaRegCopyright } from "react-icons/fa";
+import game from '../assets/game.png';
+import temp from '../assets/temp.png';
+import song from '../assets/song.png';
 
 function Projects() {
+  const navigate = useNavigate();
   const projectList = [
     {
-      title: "E-Commerce Analytics",
-      desc: "A comprehensive admin dashboard for managing products and sales data.",
-      tags: ["React", "Tailwind", "ChartJS"],
-      features: ["Real-time data updates", "Role-based access", "PDF reports"],
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500&auto=format&fit=crop"
+      title: "Simon Game Dashboard",
+      desc: "The admin dashboard for a Simon Game application.",
+      tags: ["HTML5", "CSS3", "JavaScript"],
+      features: ["Improove Mental Skills", "Interactive Gameplay", "Responsive Design"],
+      img: game,
+      demoLink: "https://signalsimon.netlify.app/", 
+      githubLink: "https://github.com/KhamankarTukesh/Simon-Game"
     },
     {
-      title: "TaskFlow Mobile",
-      desc: "A productivity mobile app for teams to manage sprints and tasks.",
-      tags: ["React Native", "Firebase", "Redux"],
-      features: ["Offline-first sync", "Push notifications", "Dark mode"],
-      img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=500&auto=format&fit=crop"
+      title: "Weather Tracker App",
+      desc: "Real-time weather updates with personalized alerts and forecasts.",
+      tags: ['React', 'API Integration', 'Tailwind CSS'],
+      features: ["Live Weather Data", "Custom Alerts", "User-friendly Interface"],
+      img: temp,
+      demoLink: "https://blueskyly.netlify.app/",
+      githubLink: "https://github.com/KhamankarTukesh/Weather-App"
     },
     {
-      title: "Secure API Gateway",
-      desc: "High-performance middleware handling auth and request routing.",
-      tags: ["Node.js", "Redis", "Docker"],
-      features: ["JWT & OAuth2 Auth", "Distributed caching", "99.9% Uptime"],
-      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=500&auto=format&fit=crop"
+      title: "Spotify Clone",
+      desc: "Looks like Spotify to Improove my frontend skills.",
+      tags: ['HTML5', 'CSS3',],
+      features: ["Responsive Layout", 'Respected Original Design', "Responsive Design"],
+      img: song,
+      demoLink: "https://lifymusic.netlify.app/",
+      githubLink: "https://github.com/KhamankarTukesh/Spotify-clone"
     }
   ];
 
@@ -82,13 +93,25 @@ function Projects() {
                 </ul>
 
                 {/* Compact Buttons */}
+{/* 2. Updated Buttons with Dynamic Links */}
                 <div className="flex gap-3 pt-4 border-t border-white/5">
-                  <button className="flex-1 bg-primary text-black font-black py-2.5 rounded-lg flex items-center justify-center hover:shadow-[0_0_50px_rgba(57,255,20,0.5)] transition-all hover:scale-105 gap-2 hover:bg-[#2edb12] transition-all text-[11px] uppercase tracking-tighter">
-                    <FaEye size={14} /> Live Demo<span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                  </button>
-                  <button className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2.5 rounded-lg flex hover:scale-105 items-center justify-center gap-2 hover:bg-white/10 transition-all text-[11px] uppercase tracking-tight">
-                    <GoCode size={14} /> GitHub<span className="material-symbols-outlined text-[20px]">open_in_new</span>
-                  </button>
+                  <a 
+                    href={project.demoLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 bg-primary text-black font-black py-2.5 rounded-lg flex items-center justify-center hover:shadow-[0_0_20px_rgba(57,255,20,0.5)] transition-all hover:scale-105 gap-2 hover:bg-[#2edb12] text-[11px] uppercase tracking-tighter"
+                  >
+                    <FaEye size={14} /> Live Demo <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
+                  
+                  <a 
+                    href={project.githubLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2.5 rounded-lg flex hover:scale-105 items-center justify-center gap-2 hover:bg-white/10 transition-all text-[11px] uppercase tracking-tight"
+                  >
+                    <GoCode size={14} /> GitHub <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -101,7 +124,7 @@ function Projects() {
           <p className="text-gray-500 mb-8 text-sm max-w-md mx-auto">
             I'm always open to discussing new projects and creative ideas.
           </p>
-          <button className="inline-flex items-center gap-2 border border-primary/50 text-primary px-8 py-3 rounded-full text-xs font-black hover:bg-primary hover:text-black transition-all duration-300 group uppercase tracking-widest">
+          <button onClick={()=> navigate('/contact')} className="inline-flex items-center gap-2 border border-primary/50 text-primary px-8 py-3 rounded-full text-xs font-black hover:bg-primary hover:text-black transition-all duration-300 group uppercase tracking-widest">
             Let's Connect <GoArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

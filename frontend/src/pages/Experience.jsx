@@ -138,7 +138,7 @@ const ExperiencePage = () => {
             <span className="material-symbols-outlined text-[#38ff14] text-3xl drop-shadow-[0_0_8px_#38ff14]">emoji_events</span>
             <h2 className="text-2xl font-bold text-white">Achievements & Hackathons</h2>
           </div>
-          
+
           <div className="flex gap-6 overflow-x-auto pb-4 hide-scrollbar snap-x">
             <AchievementCard title="Smart India Hackathon - 2025" role="College Level" icon="trophy" color="text-yellow-500" />
             <AchievementCard title="LeetCode Annual Contest" role="IN Progress" icon="code_blocks" color="text-[#38ff14]" />
