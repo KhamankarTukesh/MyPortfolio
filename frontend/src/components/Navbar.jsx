@@ -31,7 +31,7 @@ function Navbar() {
           <div className='flex items-center gap-2 sm:gap-4'>
             {/* Resume Link - Styled as a Button */}
             <a
-              href="/resume.pdf"
+              href="/certs/resume.pdf"
               download="Tukesh_Khamankar_Resume.pdf"
               className="py-1.5 px-4 sm:px-6 font-bold rounded-xl border border-primary text-primary bg-background-dark shadow-[0_0_10px_rgba(57,255,20,0.3)] hover:shadow-[0_0_50px_rgba(57,255,20,0.6)] transition-all duration-300 flex items-center hover:scale-[1.05] text-xs sm:text-sm no-underline cursor-pointer"
             >

@@ -17,7 +17,8 @@ function Skills() {
         <div className="text-center mb-24">
           <h2 className="text-primary uppercase tracking-[0.4em] text-sm font-black mb-4">Expertise</h2>
           <h1 className="text-6xl md:text-7xl font-black mb-6 tracking-tighter">
-            Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Toolkit</span>
+            Technical <span className="inline-block drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]  animate-pulse scale-100 hover:scale-110 transition-transform duration-700 text-primary">
+              Toolkit</span>
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
             A diverse set of skills and technologies that I have mastered to build efficient, scalable, and maintainable software solutions.
