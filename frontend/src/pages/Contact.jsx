@@ -8,7 +8,7 @@ const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState(""); // "", "sending", "success", "error"
 
-  const handleLinkedIn = () => window.open('https://linkedin.com/in/tukesh-khamankar-aa5894332', '_blank');
+  const handleLinkedIn = () => window.open('https://linkedin.com/in/tukesh-khamankar', '_blank');
   const handleGitHub = () => window.open('https://github.com/khamankartukesh', '_blank');
   const handleLeetcode = () => window.open('https://leetcode.com/u/CodeWithTukesh/', '_blank');
 
