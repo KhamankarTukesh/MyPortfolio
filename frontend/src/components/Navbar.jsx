@@ -58,7 +58,7 @@ function Navbar() {
             {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
               <Link
                 key={item}
-                to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                to={item === 'Home' ? '/' : `/#${item.toLowerCase()}`}
                 onClick={() => setIsOpen(false)}
                 className="text-white hover:text-primary text-xl font-semibold py-2 border-b border-white/5 last:border-0"
               >
