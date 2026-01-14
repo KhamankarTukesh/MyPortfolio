@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { GoCheckCircleFill, GoCode, GoArrowRight } from "react-icons/go";
 import { FaEye, FaRegCopyright } from "react-icons/fa";
 import game from '../assets/game.png';
@@ -52,74 +53,84 @@ function Projects() {
           </p>
         </div>
 
-{/* --- Projects Grid (Compact Size + Original Neon Glow) --- */}
+{/* --- Projects Grid (Compact Size + Heavy Neon Glow) --- */}
 <div className="max-w-5xl mx-auto px-4"> 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
     {projectList.map((project, index) => (
-      <div 
-        key={index} 
-        className="bg-[#0d0d0d] border border-white/5 rounded-[1.5rem] overflow-hidden group hover:border-primary/40 transition-all duration-500 flex flex-col h-[420px] hover:shadow-[0_0_30px_rgba(57,255,20,0.6)]" 
+      <motion.div 
+        key={index}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
+        className="group relative h-[420px]" // Relative for glow positioning
       >
-        
-        {/* Image - Compact Height with high hover opacity */}
-        <div className="h-32 overflow-hidden relative">
-          <img 
-            src={project.img} 
-            alt={project.title} 
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent"></div>
-        </div>
+        {/* 1. The "Heavy Glow" Layer - Only visible on hover */}
+        <div className="absolute -inset-0.5 bg-primary/40 rounded-[1.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-        {/* Content - Slim Padding */}
-        <div className="p-5 flex flex-col flex-1">
-          <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors truncate">
-            {project.title}
-          </h3>
-          <p className="text-gray-500 text-[10px] mb-3 leading-tight line-clamp-2">
-            {project.desc}
-          </p>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            {project.tags.map(tag => (
-              <span key={tag} className="px-2 py-0.5 bg-primary/5 border border-primary/10 rounded-md text-[8px] font-bold text-primary uppercase tracking-wider">
-                {tag}
-              </span>
-            ))}
+        {/* 2. Main Card Content */}
+        <div className="relative h-full bg-[#0d0d0d] border border-white/5 rounded-[1.5rem] overflow-hidden flex flex-col group-hover:border-primary/50 transition-all duration-500">
+          
+          {/* Image Section */}
+          <div className="h-32 overflow-hidden relative">
+            <img 
+              src={project.img} 
+              alt={project.title} 
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent"></div>
           </div>
 
-          {/* Features - Compact list */}
-          <ul className="space-y-1.5 mb-4 flex-1">
-            {project.features.map(feat => (
-              <li key={feat} className="flex items-center gap-2 text-[10px] text-gray-400">
-                <GoCheckCircleFill className="text-primary text-xs shrink-0" /> {feat}
-              </li>
-            ))}
-          </ul>
+          {/* Text Content */}
+          <div className="p-5 flex flex-col flex-1">
+            <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
+              {project.title}
+            </h3>
+            <p className="text-gray-500 text-[10px] mb-3 leading-tight line-clamp-2">
+              {project.desc}
+            </p>
 
-          {/* Buttons - Restored Original Glow Intensity */}
-          <div className="flex gap-2 pt-4 border-t border-white/5">
-            <a 
-              href={project.demoLink} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex-1 bg-primary text-black font-black py-2 rounded-lg flex items-center justify-center hover:shadow-[0_0_20px_rgba(57,255,20,0.6)] transition-all hover:scale-105 gap-1.5 text-[9px] uppercase tracking-tighter"
-            >
-              <FaEye size={12} /> Live Demo
-            </a>
-            
-            <a 
-              href={project.githubLink} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2 rounded-lg flex hover:scale-105 items-center justify-center gap-1.5 hover:bg-white/10 transition-all text-[9px] uppercase tracking-tighter"
-            >
-              <GoCode size={12} /> GitHub
-            </a>
+            {/* Tags */}
+            <div className="flex flex-wrap gap-1.5 mb-4">
+              {project.tags.map(tag => (
+                <span key={tag} className="px-2 py-0.5 bg-primary/10 border border-primary/20 rounded-md text-[8px] font-bold text-primary uppercase">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* Features */}
+            <ul className="space-y-1.5 mb-4 flex-1">
+              {project.features.map(feat => (
+                <li key={feat} className="flex items-center gap-2 text-[10px] text-gray-400">
+                  <GoCheckCircleFill className="text-primary text-xs shrink-0" /> {feat}
+                </li>
+              ))}
+            </ul>
+
+            {/* Buttons with Extra Glow */}
+            <div className="flex gap-2 pt-4 border-t border-white/5">
+              <a 
+                href={project.demoLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex-1 bg-primary text-black font-black py-2 rounded-lg flex items-center justify-center hover:shadow-[0_0_20px_rgba(57,255,20,0.8)] transition-all hover:scale-105 gap-1.5 text-[9px] uppercase"
+              >
+                <FaEye size={12} /> Live Demo
+              </a>
+              
+              <a 
+                href={project.githubLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex-1 bg-white/5 border border-white/10 text-white font-black py-2 rounded-lg flex hover:scale-105 items-center justify-center gap-1.5 hover:bg-white/10 transition-all text-[9px] uppercase"
+              >
+                <GoCode size={12} /> GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     ))}
   </div>
 </div>

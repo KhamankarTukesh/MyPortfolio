@@ -68,26 +68,58 @@ const ExperiencePage = () => {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Education Card */}
-          <div className="group bg-[#132311]/40 border border-[#38ff14]/10 p-8 rounded-[2.5rem] hover:border-[#38ff14]/50 hover:shadow-[0_0_30px_rgba(56,255,20,0.15)] transition-all duration-500 relative overflow-hidden">
-            <div className="relative z-10">
-              <div className="w-14 h-14 bg-[#0b160a] border border-[#38ff14]/20 rounded-2xl flex items-center justify-center text-[#38ff14] mb-8 shadow-[inset_0_0_15px_rgba(56,255,20,0.1)] group-hover:shadow-[0_0_20px_rgba(56,255,20,0.3)] transition-all">
-                <span className="material-symbols-outlined text-3xl">school</span>
-              </div>
-              <p className="text-[#38ff14] text-[10px] font-black tracking-[0.3em] uppercase mb-2">2024 — 2028</p>
-              <h3 className="text-2xl font-bold text-white mb-2">B.Tech in Computer Science</h3>
-              <p className="text-gray-500 font-medium mb-8 text-lg">Savitribai phule University(SPPU), Pune</p>
-              
-              <div className="pt-6 border-t border-white/5 space-y-4">
-                <p className="text-[10px] font-black tracking-widest text-white/40 uppercase">Notable Achievements</p>
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#38ff14] text-sm">verified</span>
-                  <p className="text-sm text-gray-400 font-bold">First Years Honors (9.8 CGPA)</p>
-                </div>
-              </div>
-            </div>
-          </div>
+<div className="group bg-[#132311]/40 border border-[#38ff14]/10 p-8 rounded-[2.5rem] hover:border-[#38ff14]/50 hover:shadow-[0_0_30px_rgba(56,255,20,0.15)] transition-all duration-500 relative overflow-hidden h-full">
+  
+  {/* 1. Header (Icon) - Yeh fixed rahega */}
+  <div className="relative z-20 mb-6">
+    <div className="w-14 h-14 bg-[#0b160a] border border-[#38ff14]/20 rounded-2xl flex items-center justify-center text-[#38ff14] shadow-[inset_0_0_15px_rgba(56,255,20,0.1)] group-hover:shadow-[0_0_20px_rgba(56,255,20,0.3)] transition-all">
+      <span className="material-symbols-outlined text-3xl">school</span>
+    </div>
+  </div>
 
+  {/* 2. Scrollable Content Area */}
+  {/* 'max-h-[250px]' adjust karke aap scroll control kar sakte ho bina bahar ka div change kiye */}
+  <div className="relative z-10 max-h-[300px] overflow-y-auto hide-scrollbar pr-2 space-y-10">
+    
+    {/* Current Degree: B.Tech */}
+    <div className="relative pl-4 border-l-2 border-[#38ff14]/20">
+      <div className="absolute -left-[7px] top-0 w-3 h-3 rounded-full bg-[#38ff14] shadow-[0_0_10px_#38ff14]"></div>
+      <p className="text-[#38ff14] text-[10px] font-black tracking-[0.3em] uppercase mb-2">2024 — 2028</p>
+      <h3 className="text-xl font-bold text-white mb-2 leading-tight">B.Tech in Computer Science</h3>
+      <p className="text-gray-500 font-medium mb-4 text-sm leading-relaxed">Savitribai Phule University (SPPU), Pune</p>
+      
+      <div className="pt-4 border-t border-white/5 space-y-4">
+        <p className="text-[9px] font-black tracking-widest text-white/40 uppercase">Notable Achievements</p>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#38ff14] text-sm">verified</span>
+          <p className="text-xs text-gray-400 font-bold">First Year Honors (9.8 CGPA)</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Added: HSC Section */}
+    <div className="relative pl-4 border-l-2 border-white/10">
+      <div className="absolute -left-[7px] top-0 w-3 h-3 rounded-full bg-blue-500/50"></div>
+      <p className="text-blue-400/80 text-[10px] font-black tracking-[0.3em] uppercase mb-2">2022 — 2024</p>
+      <h3 className="text-lg font-bold text-white mb-1">HSC (12th Grade)</h3>
+      <p className="text-gray-500 text-sm">Maharashtra State Board</p>
+    </div>
+
+    {/* Added: SSC Section */}
+    <div className="relative pl-4 border-l-2 border-white/10 pb-6">
+      <div className="absolute -left-[7px] top-0 w-3 h-3 rounded-full bg-orange-500/50"></div>
+      <p className="text-orange-400/80 text-[10px] font-black tracking-[0.3em] uppercase mb-2">2021 — 2022</p>
+      <h3 className="text-lg font-bold text-white mb-1">SSC (10th Grade)</h3>
+      <p className="text-gray-500 text-sm">Maharashtra State Board</p>
+    </div>
+  </div>
+
+  {/* 3. Bottom Fade Overlay - Hint to scroll */}
+  <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-[#132311] via-[#132311]/80 to-transparent pointer-events-none z-20"></div>
+
+</div>
 <div className="group bg-[#132311]/40 border border-[#38ff14]/10 p-6 md:p-8 rounded-[2.5rem] hover:border-[#38ff14]/50 hover:shadow-[0_0_30px_rgba(56,255,20,0.15)] transition-all duration-500 relative overflow-hidden">
+  
   {/* Background Decoration Glow */}
   <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#38ff14]/5 rounded-full blur-[80px] group-hover:bg-[#38ff14]/10 transition-all duration-700"></div>
 
@@ -96,11 +128,13 @@ const ExperiencePage = () => {
     Certifications
   </h3>
 
-  <div className="space-y-4 relative z-10">
+  {/* Scrollable Container with Hidden Scrollbar */}
+  <div className="space-y-4 relative z-10 max-h-[280px] overflow-y-auto hide-scrollbar pr-2">
+    
     {/* Full Stack Certificate Item */}
     <div className="flex items-center justify-between p-4 bg-[#0b160a]/50 border border-white/5 rounded-2xl hover:border-[#38ff14]/30 transition-all group/item">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-purple-500 group-hover/item:shadow-[0_0_15px_rgba(56,255,20,0.2)] transition-all">
+        <div className="w-12 h-12 rounded-full bg-[#132311] border border-white/5 flex items-center justify-center text-[#38ff14] group-hover/item:shadow-[0_0_15px_rgba(56,255,20,0.2)] transition-all">
           <span className="material-symbols-outlined text-2xl">layers</span>
         </div>
         <div>
@@ -108,7 +142,7 @@ const ExperiencePage = () => {
           <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">MERN Stack (Currently Working)</p>
         </div>
       </div>
-      <a href="/certs/fullstack.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
+      <a href="/certs/fullstack.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-400 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
         <span className="material-symbols-outlined text-[20px]">open_in_new</span>
       </a>
     </div>
@@ -121,14 +155,21 @@ const ExperiencePage = () => {
         </div>
         <div>
           <p className="text-white font-bold text-sm leading-tight">Front-End Development</p>
-          <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">HTML5 , CSS3, JavaScript</p>
+          <p className="text-gray-500 text-[10px] uppercase tracking-widest mt-1 font-bold">HTML5, CSS3, JavaScript</p>
         </div>
       </div>
-      <a href="/certs/frontend.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-500 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
+      <a href="/certs/frontend.pdf" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#0b160a] border border-white/10 text-gray-400 hover:text-[#38ff14] hover:border-[#38ff14]/50 transition-all">
         <span className="material-symbols-outlined text-[20px]">open_in_new</span>
       </a>
     </div>
+
+    {/* Add 1-2 more items here to see the scroll effect */}
+    
   </div>
+
+  {/* --- The Magic "Scroll Indicator" Gradient --- */}
+  {/* Ye div bottom mein ek dhundla effect create karega taaki lage ki niche aur items hain */}
+  <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#0d120d] to-transparent pointer-events-none z-20"></div>
 </div>
         </section>
 
