@@ -107,13 +107,6 @@ Create a `.env` file in the root directory:
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
----
-
-## 📸 Screenshots
-
-*Add screenshots or GIF previews here for better portfolio impact.*
 
 ---
 
