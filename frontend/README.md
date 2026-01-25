@@ -1,16 +1,145 @@
-# React + Vite
+# 🚀 Developer Portfolio — Tukesh Khamankar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, animated personal portfolio website** built with **React**, **Tailwind CSS**, and **Framer Motion**. This portfolio showcases my journey, skills, projects, experience, and provides a fully functional contact form.
 
-Currently, two official plugins are available:
+> 🎯 Purpose: Personal branding, showcasing projects, and professional outreach.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ⚛️ **React SPA** with clean component architecture
+* 🎨 **Tailwind CSS** for rapid, scalable styling
+* 🎞️ **Framer Motion** for smooth, professional animations
+* 📱 Fully **responsive** (mobile-first design)
+* 🌙 Dark neon-themed UI for a modern developer aesthetic
+* 📩 **EmailJS integration** for live contact form
+* 🧭 Smooth navigation with **React Router**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Pages & Components
+
+### 🧭 Navbar
+
+* Fixed, glassmorphism navbar
+* Desktop & animated mobile menu
+* Resume download button
+
+### 🏠 Home
+
+* Hero section with animated profile image
+* Current focus badge
+* CTA buttons (Projects & Contact)
+* Stats section (Experience, Projects, Clients)
+
+### 👨‍💻 About
+
+* Personal journey & philosophy
+* Current company highlight
+* Sticky philosophy card with glow effects
+
+### 🧠 Skills *(optional / expandable)*
+
+* Tech stack presentation (Frontend, Backend, Tools)
+
+### 💼 Experience & Education
+
+* Timeline-based experience cards
+* Education history (B.Tech, HSC, SSC)
+* Certifications with preview links
+* Achievements & hackathons section
+
+### 📬 Contact
+
+* Animated contact form
+* Email validation & status handling
+* Social links (LinkedIn, GitHub, LeetCode)
+* EmailJS powered messaging
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React, Tailwind CSS
+* **Animations:** Framer Motion
+* **Routing:** React Router DOM
+* **Icons:** React Icons, Material Symbols
+* **Email Service:** EmailJS
+* **Build Tool:** Vite
+
+---
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/
+│   └── certs/
+│       ├── resume.pdf
+│       ├── fullstack.pdf
+│       └── frontend.pdf
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Experience.jsx
+│   │   └── Contact.jsx
+│   ├── assets/
+│   │   └── tukesh.png
+│   ├── App.jsx
+│   └── main.jsx
+└── README.md
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+---
+
+## 📸 Screenshots
+
+*Add screenshots or GIF previews here for better portfolio impact.*
+
+---
+
+## 📈 Learning Outcomes
+
+* Building scalable React components
+* Advanced UI animations with Framer Motion
+* Responsive layouts with Tailwind
+* Integrating third-party services (EmailJS)
+* Creating a professional developer brand
+
+---
+
+## 🧑‍💻 Author
+
+**Tukesh Khamankar**
+Computer Science Engineering Student
+Aspiring Full Stack Developer (MERN + AI Automation)
+
+* 🔗 LinkedIn: [https://linkedin.com/in/tukesh-khamankar](https://linkedin.com/in/tukesh-khamankar)
+* 💻 GitHub: [https://github.com/khamankartukesh](https://github.com/khamankartukesh)
+* 🧠 LeetCode: [https://leetcode.com/u/CodeWithTukesh/](https://leetcode.com/u/CodeWithTukesh/)
+
+---
+
+## 📄 Disclaimer
+
+This portfolio is a **personal, non-commercial project** created for learning and professional showcasing purposes.
+
+---
+
+⭐ If you like this portfolio, feel free to fork, customize, and build your own!
