@@ -126,9 +126,9 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 Computer Science Engineering Student
 Aspiring Full Stack Developer (MERN + AI Automation)
 
-* 🔗 LinkedIn: [https://linkedin.com/in/tukesh-khamankar](https://linkedin.com/in/tukesh-khamankar)
-* 💻 GitHub: [https://github.com/khamankartukesh](https://github.com/khamankartukesh)
-* 🧠 LeetCode: [https://leetcode.com/u/CodeWithTukesh/](https://leetcode.com/u/CodeWithTukesh/)
+🔗 LinkedIn: [visite live ](https://linkedin.com/in/tukesh-khamankar)
+💻 GitHub: [visite live](https://github.com/khamankartukesh)
+🧠 LeetCode: [visite live](https://leetcode.com/u/CodeWithTukesh/)
 
 ---
 
